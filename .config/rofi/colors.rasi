@@ -1,0 +1,9 @@
+* {
+    background:     rgb(17, 18, 29, 0.8);
+    background-alt:     rgb(17, 18, 29, 0.0);
+   /* background-alt: #162038; */
+    foreground:     #eceff4;
+    selected:       #313244;
+    active:         #88c0d0;
+    urgent:         #5e81ac;
+}

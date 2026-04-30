@@ -1,0 +1,92 @@
+@theme "/dev/null"
+
+* {
+    bg: #0d1210;
+    bg-alt: #1e2a23;
+    fg: #deeae3;
+    fg-alt: #7a9e8a;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+configuration {
+    show-icons: true;
+    icon-size: 100;
+    font: "JetBrainsMono Nerd Font 11";
+    display-drun: "tapeta: ";
+}
+
+window {
+    width: 700px;
+    border-radius: 12px;
+    border-width: 1px;
+    border-color: #2c3d33;
+    background-color: #0d1210;
+}
+
+mainbox {
+    children: [inputbar, listview];
+    background-color: transparent;
+}
+
+inputbar {
+    children: [prompt, entry];
+    background-color: #151c18;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: #7a9e8a;
+    padding: 10 6 10 12;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #deeae3;
+    padding: 10 10 10 0;
+}
+
+listview {
+    columns: 3;
+    lines: 2;
+    padding: 10px;
+    fixed-height: false;
+    fixed-columns: true;
+    fixed-lines: false;
+    border: 0;
+    background-color: transparent;
+    spacing: 8px;
+}
+
+element {
+    padding: 8px;
+    text-color: #7a9e8a;
+    background-color: #151c18;
+    border-radius: 8px;
+    orientation: vertical;
+}
+
+element selected {
+    text-color: #0d1210;
+    background-color: #7a9e8a;
+    border-radius: 8px;
+}
+
+element-icon {
+    size: 100px;
+    background-color: inherit;
+    border-radius: 6px;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.5;
+    padding: 4 0 0 0;
+}
