@@ -1,0 +1,160 @@
+{
+"layer": "transparent",
+"position": "top",
+"height": 34,
+"margin-left": 8,
+"margin-right": 8,
+"margin-top": 6,
+"margin-bottom": 6,
+
+"modules-left": [
+    "hyprland/workspaces",
+    "custom/firefox",
+    "custom/spotify",
+    "custom/code",
+    "custom/discord",
+    "custom/steam",
+    "mpris"
+],
+
+"modules-center": ["clock"],
+
+"modules-right": [
+    "custom/weather",
+    "tray",
+    "pulseaudio",
+    "custom/stats",
+    "custom/power"
+],
+
+  "clock": {
+    "format": " {:%H:%M  %a, %b %d}",
+    "tooltip": true,
+    "tooltip-format": "Time and Date",
+    "on-click": "gsimplecal"
+  },
+
+  "cpu": {
+    "interval": 2,
+    "format": " {usage}%"
+  },
+
+"memory": {
+    "interval": 2,
+    "format": "󰍛 {used:0.1f}G/{total:0.1f}G",
+    "warning": 70,
+    "critical": 90,
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f}G / {total:0.1f}G used"
+},
+
+"pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "󰝟 muted",
+    "format-icons": {
+        "default": ["󰕿", "󰖀", "󰕾"]
+    },
+    "on-click": "pavucontrol",
+    "scroll-step": 5
+},
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 10
+  },
+
+  "custom/firefox": {
+    "format": "󰈹",
+    "on-click": "firefox",
+    "exec": "echo '󰈹'",
+    "interval": "once",
+    "tooltip": true,
+    "tooltip-format": "Firefox",
+    "font-size": 18
+  },
+
+  "custom/spotify": {
+    "format": "",
+    "on-click": "spotify",
+    "exec": "echo ''",
+    "interval": "once",
+    "font-size": 20,
+    "tooltip": true,
+    "tooltip-format": "Spotify"
+  },
+
+  "custom/code": {
+    "format": "",
+    "on-click": "code",
+    "exec": "echo ''",
+    "tooltip": true,
+    "tooltip-format": "Visual Studio Code",
+    "interval": "once",
+    "font-size": 18
+  },
+
+  "custom/discord": {
+    "format": "",
+    "on-click": "vesktop",
+    "exec": "echo ''",
+    "tooltip": true,
+    "tooltip-format": "Discord",
+    "interval": "once",
+    "font-size": 18
+  },
+
+  "custom/steam": {
+    "format": "",
+    "on-click": "steam",
+    "exec": "echo ''",
+    "interval": "once",
+    "font-size": 18,
+    "tooltip": true,
+    "tooltip-format": "Steam"
+    
+  },
+
+  "custom/power": {
+    "format": "",
+    "tooltip": true,
+    "tooltip-format": "Power Menu",
+    "on-click": "/bin/bash /home/yaushi/.config/rofi/scripts/powermenu.sh",
+    "exec": "echo ''",
+    "interval": "once",
+    "font-size": 18
+  },
+
+},
+
+"custom/weather": {
+    "format": " {}",
+    "exec": "~/.config/waybar/scripts/weather.sh",
+      "tooltip": true,
+    "tooltip-format": "Weather and Temperature",
+    "interval": 300
+
+},
+
+"mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "format-paused": " {title} - {artist}",
+    "player": "spotify",
+    "tooltip": false,
+    "player-icons": {
+        "default": "▶",
+        "spotify": ""
+    },
+    "status-icons": {
+        "paused": ""
+    },
+    "interval": 1
+},
+"custom/stats": {
+    "exec": "~/.config/waybar/scripts/stats.sh",
+    "interval": 2,
+    "format": "{}",
+    "tooltip": false,
+    "return-type": ""
+}
+
+}
