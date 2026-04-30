@@ -1,0 +1,216 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-size: 13px;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background: transparent;
+    color: #deeae3;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+}
+
+#workspaces,
+#clock,
+#mpris,
+#pulseaudio,
+#tray,
+#custom-firefox,
+#custom-spotify,
+#custom-code,
+#custom-discord,
+#custom-steam,
+#custom-weather,
+#custom-stats,
+#custom-swaync,
+#custom-power {
+    background: #0d1210;
+    border-radius: 12px;
+    margin: 3px 4px;
+}
+
+#workspaces {
+    padding: 0 6px;
+    margin: 3px 4px;
+}
+
+#workspaces button {
+    padding: 2px 14px;
+    margin: 3px 2px;
+    border-radius: 8px;
+    background: transparent;
+    color: #5a7a66;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.15s ease;
+}
+
+#workspaces button.active {
+    background: #7a9e8a;
+    color: #0d1210;
+    padding: 2px 18px;
+}
+
+#workspaces button:hover {
+    background: #1e2a23;
+    color: #deeae3;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+#workspaces button.active:hover {
+    background: #6a8e7a;
+    color: #0d1210;
+}
+
+#workspaces button.urgent {
+    background: #b07fa0;
+    color: #0d1210;
+}
+
+#custom-firefox {
+    background: #0d1210;
+    border-radius: 12px 0 0 12px;
+    margin: 3px 0 3px 4px;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #e8865a;
+    transition: background 0.15s ease;
+}
+
+#custom-spotify {
+    background: #0d1210;
+    border-radius: 0;
+    margin: 3px 0;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #1ed760;
+    transition: background 0.15s ease;
+}
+
+#custom-code {
+    background: #0d1210;
+    border-radius: 0;
+    margin: 3px 0;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #7a9ec4;
+    transition: background 0.15s ease;
+}
+
+#custom-discord {
+    background: #0d1210;
+    border-radius: 0;
+    margin: 3px 0;
+    padding: 0 10px;
+    font-size: 17px;
+    color: #9da8e8;
+    transition: background 0.15s ease;
+}
+
+#custom-steam {
+    background: #0d1210;
+    border-radius: 0 12px 12px 0;
+    margin: 3px 4px 3px 0;
+    padding: 0 10px;
+    font-size: 18px;
+    color: #1A9FFF;
+    transition: background 0.15s ease;
+}
+
+#custom-firefox:hover,
+#custom-spotify:hover,
+#custom-code:hover,
+#custom-discord:hover,
+#custom-steam:hover {
+    background: #1e2a23;
+}
+
+#mpris {
+    color: #8aaa98;
+    font-size: 12px;
+    padding: 2px 12px;
+    background: #151c18;
+}
+
+#clock {
+    color: #deeae3;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 0 16px;
+    letter-spacing: 0.5px;
+}
+
+#custom-weather {
+    color: #deeae3;
+    font-size: 13px;
+    padding: 0 12px;
+}
+
+#tray {
+    padding: 0 8px;
+}
+
+#pulseaudio {
+    color: #deeae3;
+    font-size: 13px;
+    padding: 0 12px;
+    transition: background 0.15s ease;
+}
+
+#pulseaudio.muted {
+    color: #2c3d33;
+}
+
+#pulseaudio:hover {
+    background: #1e2a23;
+}
+
+#custom-stats {
+    color: #deeae3;
+    font-size: 12px;
+    padding: 0 12px;
+    background: #151c18;
+}
+
+#custom-swaync {
+    color: #deeae3;
+    font-size: 15px;
+    padding: 0 10px;
+    transition: background 0.15s ease;
+}
+
+#custom-swaync:hover {
+    background: #1e2a23;
+    color: #deeae3;
+}
+
+#custom-power {
+    color: #b07fa0;
+    font-size: 17px;
+    padding: 0 14px;
+    transition: background 0.15s ease;
+}
+
+#custom-power:hover {
+    background: #1e2a23;
+    color: #d4a0c4;
+}
+
+tooltip {
+    background: #151c18;
+    border: 1px solid #2c3d33;
+    border-radius: 8px;
+    color: #deeae3;
+    font-size: 12px;
+}
