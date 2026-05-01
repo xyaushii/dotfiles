@@ -6,7 +6,8 @@ hello
 
 remember to change the link to ur city in weather.sh so it works on waybar
 
+probably didnt include every config
 
-maybe gonna add stuff later 
+discord: cipsior
 
 ![de:hub.de-Projekt](image.png)
