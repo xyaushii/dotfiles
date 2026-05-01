@@ -1,6 +1,6 @@
 ![screenshot](image.png)
 
-<p align="center">**Hyprland-based rice with Waybar, Rofi, and Kitty.**</p>
+<strong><p align="center">Hyprland-based rice with Waybar, Rofi, and Kitty.</p></strong>
 
 ## Components
 
@@ -18,6 +18,7 @@
 git clone https://github.com/yaushi/dotfiles.git && cp -r dotfiles/.config/* ~/.config/
 ```
 
+> [!WARNING]
 > Backup your existing configs first and adjust paths to match your system.
 
 ## Configuration
