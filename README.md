@@ -1,13 +1,51 @@
-# dotfiles
-hello
+![screenshot](image.png)
 
+<p align="center">**Hyprland-based rice with Waybar, Rofi, and Kitty.**</p>
 
+## Components
 
+| Component   | Description                          |
+|-------------|--------------------------------------|
+| **Hyprland** | Wayland compositor with modular config |
+| **Waybar**   | Status bar with custom scripts       |
+| **Rofi**     | App launcher, wallpaper & power menu |
+| **Kitty**    | GPU-accelerated terminal emulator    |
+| **Fastfetch** | System information display          |
 
-remember to change the link to ur city in weather.sh so it works on waybar
+## Installation
 
-probably didnt include every config
+```bash
+git clone https://github.com/yaushi/dotfiles.git && cp -r dotfiles/.config/* ~/.config/
+```
 
-discord: cipsior
+> Backup your existing configs first and adjust paths to match your system.
 
-![de:hub.de-Projekt](image.png)
+## Configuration
+
+### Hyprland
+**Main entry point:** `~/.config/hypr/hyprland.conf`
+- **Keybinds:** `~/.config/hypr/conf/keybinds.conf`
+- **Monitors:** `~/.config/hypr/conf/monitors.conf`
+- **Animations:** `~/.config/hypr/conf/animations.conf`
+- **Window rules:** `~/.config/hypr/conf/windowrules.conf`
+
+### Waybar Weather
+
+> [!IMPORTANT]
+> Edit `~/.config/waybar/scripts/weather.sh` and replace `YOURCITY` with your city for weather to display correctly.
+
+## Dependencies
+
+- `hyprland`
+- `waybar`
+- `rofi`
+- `kitty`
+- `fastfetch`
+- `swaync`
+- `awww` (wallpaper daemon)
+- `yazi`
+- `cliphist` (clipboard)
+
+## Contact
+
+Discord: cipsior
