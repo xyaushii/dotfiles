@@ -124,9 +124,7 @@
     "font-size": 18
   },
 
-},
-
-"custom/weather": {
+  "custom/weather": {
     "format": " {}",
     "exec": "~/.config/waybar/scripts/weather.sh",
       "tooltip": true,
@@ -135,20 +133,24 @@
 
 },
 
-"mpris": {
+  "mpris": {
     "format": "{player_icon} {title} - {artist}",
-    "format-paused": " {title} - {artist}",
-    "player": "spotify",
+    "format-paused": "{player_icon} {title} - {artist}",
     "tooltip": false,
     "player-icons": {
-        "default": "▶",
-        "spotify": ""
+      "default": "▶",
+      "spotify": ""
     },
     "status-icons": {
-        "paused": ""
+      "paused": "",
+      "playing": ""
     },
-    "interval": 1
-},
+    "interval": 1,
+    "on-click": "playerctl play-pause",
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "on-click-right": "playerctl stop"
+  },
 "custom/stats": {
     "exec": "~/.config/waybar/scripts/stats.sh",
     "interval": 2,

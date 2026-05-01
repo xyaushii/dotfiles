@@ -141,6 +141,12 @@ window#waybar {
     font-size: 12px;
     padding: 2px 12px;
     background: #151c18;
+    transition: background 0.15s ease;
+}
+
+#mpris:hover {
+    background: #1e2a23;
+    color: #a0c4b0;
 }
 
 #clock {
