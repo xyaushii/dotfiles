@@ -126,7 +126,7 @@
     "font-size": 18
   },
 
-"custom/weather": {
+  "custom/weather": {
     "format": " {}",
     "exec": "~/.config/waybar/scripts/weather.sh",
       "tooltip": true,
@@ -135,9 +135,9 @@
 
 },
 
-"mpris": {
-  "format": "{player_icon} {title} - {artist}",
-   "format-paused": "{player_icon} {title} - {artist}",
+  "mpris": {
+    "format": "{player_icon} {title} - {artist}",
+    "format-paused": "{player_icon} {title} - {artist}",
     "tooltip": false,
     "player-icons": {
       "default": "▶",
@@ -147,7 +147,7 @@
       "paused": "",
       "playing": ""
     },
-      "interval": 1,
+    "interval": 1,
     "on-click": "playerctl play-pause",
     "on-scroll-up": "playerctl next",
     "on-scroll-down": "playerctl previous",

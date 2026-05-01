@@ -150,6 +150,11 @@ window#waybar {
     background: #1e2a23;
     color: #a0c4b0;
 }
+
+#mpris:hover {
+    background: #1e2a23;
+    color: #a0c4b0;
+}
 #clock {
     color: #deeae3;
     font-size: 13px;
