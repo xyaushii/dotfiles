@@ -139,6 +139,7 @@
     "format": "{player_icon} {title} - {artist}",
     "format-paused": "{player_icon} {title} - {artist}",
     "tooltip": false,
+    "player": "spotify",
     "player-icons": {
       "default": "▶",
       "spotify": ""
