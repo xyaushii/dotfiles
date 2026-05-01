@@ -15,7 +15,7 @@
 ## Installation
 
 ```bash
-git clone https://github.com/yaushi/dotfiles.git && cp -r dotfiles/.config/* ~/.config/
+git clone https://github.com/xyaushii/dotfiles.git && cp -r dotfiles/.config/* ~/.config/
 ```
 
 > [!WARNING]
