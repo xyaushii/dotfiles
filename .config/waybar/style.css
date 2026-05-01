@@ -30,6 +30,8 @@ window#waybar {
 #custom-code,
 #custom-discord,
 #custom-steam,
+#custom-bluetooth,
+#custom-librepods,
 #custom-weather,
 #custom-stats,
 #custom-swaync,
@@ -149,6 +151,10 @@ window#waybar {
     color: #a0c4b0;
 }
 
+#mpris:hover {
+    background: #1e2a23;
+    color: #a0c4b0;
+}
 #clock {
     color: #deeae3;
     font-size: 13px;
@@ -213,10 +219,31 @@ window#waybar {
     color: #d4a0c4;
 }
 
-tooltip {
-    background: #151c18;
-    border: 1px solid #2c3d33;
-    border-radius: 8px;
+
+
+#custom-librepods {
+    background: #0d1210;
+    border-radius: 12px 0 0 12px; 
+    margin: 0 0 0 3px;
+    padding: 0 8px 0 10px;
+    font-size: 17px;
     color: #deeae3;
-    font-size: 12px;
+    transition: background 0.15s ease;
 }
+
+#custom-bluetooth {
+    background: #0d1210;
+    border-radius: 0 12px 12px 0;
+    margin: 0 3px 0 0;
+    padding: 0 10px 0 8px;
+    font-size: 17px;
+    color: #1A9FFF;;
+    transition: background 0.15s ease;
+}
+
+
+#custom-bluetooth:hover,
+#custom-librepods:hover {
+    background: #1e2a23;
+}
+

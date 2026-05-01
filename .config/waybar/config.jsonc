@@ -14,6 +14,8 @@
     "custom/code",
     "custom/discord",
     "custom/steam",
+    "custom/librepods",
+    "custom/bluetooth",
     "mpris"
 ],
 
@@ -28,7 +30,7 @@
 ],
 
   "clock": {
-    "format": " {:%H:%M  %a, %b %d}",
+    "format": "{:%H:%M  %a, %b %d}",
     "tooltip": true,
     "tooltip-format": "Time and Date",
     "on-click": "gsimplecal"
@@ -153,10 +155,26 @@
   },
 "custom/stats": {
     "exec": "~/.config/waybar/scripts/stats.sh",
-    "interval": 2,
+    "interval": 1,
     "format": "{}",
     "tooltip": false,
     "return-type": ""
+},
+"custom/librepods": {
+    "format": "󰋋",
+    "tooltip": true,
+    "tooltip-format": "LibrePods",
+    "on-click": "/home/yaushi/librepods/linux/build/librepods",
+    "exec": "echo ''",
+    "interval": "once",
+    "font-size": 18
+},
+"custom/bluetooth": {
+    "format": "󰂯",
+    "on-click": "overskride",
+    "interval": "once",
+    "tooltip": true,
+    "tooltip-format": "Bluetooth"
 }
 
 }
