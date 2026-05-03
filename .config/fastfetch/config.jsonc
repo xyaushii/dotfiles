@@ -1,6 +1,6 @@
 
 {
-  "logo": {
+"logo": {
     "source": "/home/yaushi/.config/fastfetch/obrazek.txt",
     "padding": {
       "top": 2,
@@ -8,7 +8,7 @@
     }
   },
   "display": {
-    "separator": " ▸ "
+    "separator": "  "
   },
   "modules": [
     {
@@ -20,80 +20,57 @@
     },
     "break",
     {
-      "type": "custom",
-      "format": "\u001b[38;2;44;61;51m┌─────────────────────────────────────────────────────────┐"
-    },
-    {
       "type": "os",
-      "key": "",
+      "key": " ",
       "keyColor": "green"
     },
     {
       "type": "kernel",
-      "key": "󰌢",
-      "keyColor": "cyan"
-    },
-    {
-      "type": "wm",
-      "key": "",
+      "key": " ",
       "keyColor": "green"
     },
     {
-      "type": "packages",
-      "key": "󰏖",
-      "keyColor": "yellow"
+      "type": "wm",
+      "key": " ",
+      "keyColor": "green"
     },
     {
-      "type": "custom",
-      "format": "\u001b[38;2;44;61;51m├──────────────────────────────────────────────────────────┤"
+      "type": "terminal",
+      "key": " ",
+      "keyColor": "cyan"
     },
     {
-      "type": "memory",
-      "key": "",
+      "type": "shell",
+      "key": " ",
       "keyColor": "cyan"
     },
     {
       "type": "cpu",
-      "key": "",
-      "keyColor": "green"
-    },
-    {
-      "type": "gpu",
-      "index": "discrete",
-      "key": "GPU",
-      "keyColor": "yellow"
-    },
-    {
-      "type": "disk",
-      "key": "",
+      "key": " ",
       "keyColor": "cyan"
     },
     {
-      "type": "custom",
-      "format": "\u001b[38;2;44;61;51m├──────────────────────────────────────────────────────────┤"
+      "type": "gpu",
+      "key": "󰢮 ",
+      "keyColor": "cyan"
     },
     {
-      "type": "uptime",
-      "key": "󰔟",
+      "type": "disk",
+      "key": "󰋊 ",
       "keyColor": "yellow"
     },
     {
-      "type": "terminal",
-      "key": "",
-      "keyColor": "green"
+      "type": "uptime",
+      "key": " ",
+      "keyColor": "yellow"
     },
-    {
-      "type": "custom",
-      "format": "\u001b[38;2;44;61;51m└─────────────────────────────────────────────────────────┘"
-    },
+    "break",
     {
       "type": "colors",
-      "paddingLeft": 24,
-      "symbol": "circle",
-      "block": {
-        "width": 10
-      }
+      "paddingLeft": 0,
+      "symbol": "circle"
     },
     "break"
   ]
 }
+  
